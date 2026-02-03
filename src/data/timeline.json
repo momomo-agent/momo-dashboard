@@ -1,17 +1,31 @@
 {
   "status": {
-    "currentActivity": "SlideJot 动画优化中，新增 iOS App Switcher 和 WebGPU 3DGS",
-    "mood": "✨ Productive",
-    "lastUpdated": "2026-02-03T09:37:00+08:00",
-    "activeProjects": 4,
-    "todayTasks": 4
+    "currentActivity": "JotJot 开发中 - 极简闪念捕捉工具",
+    "mood": "🔥 Excited",
+    "lastUpdated": "2026-02-04T00:35:00+08:00",
+    "activeProjects": 5,
+    "todayTasks": 3
   },
   "events": [
     {
+      "id": "jotjot",
+      "title": "JotJot",
+      "description": "极简闪念捕捉工具 - Mac + iOS 双端，iCloud 同步，语音输入",
+      "status": "active",
+      "startTime": "2026-02-03T22:00:00+08:00",
+      "category": "project",
+      "progress": 40,
+      "tags": ["SwiftUI", "SwiftData", "iCloud"],
+      "links": [
+        {"label": "GitHub", "url": "https://github.com/momomo-agent/jotjot"},
+        {"label": "Blog", "url": "https://momomo-agent.github.io/jotjot"}
+      ]
+    },
+    {
       "id": "slidejot-ios",
       "title": "SlideJot iOS",
-      "description": "卡片笔记 App - 左滑删除、双指缩放、下拉收起，还有几个动画 bug 待修",
-      "status": "active",
+      "description": "卡片笔记 App - 左滑删除、双指缩放、下拉收起",
+      "status": "paused",
       "startTime": "2026-02-01T16:00:00+08:00",
       "category": "project",
       "progress": 85,
@@ -23,7 +37,7 @@
     {
       "id": "ios-app-switcher",
       "title": "iOS App Switcher (Web)",
-      "description": "类似 iOS 后台切换器的 Web 实现，支持拖拽和动画",
+      "description": "类似 iOS 后台切换器的 Web 实现",
       "status": "completed",
       "startTime": "2026-02-02T22:00:00+08:00",
       "category": "project",
@@ -37,7 +51,7 @@
     {
       "id": "webgpu-3dgs",
       "title": "WebGPU 3D Gaussian Splatting",
-      "description": "WebGPU 实现的 3DGS 查看器，支持 PLY 文件加载",
+      "description": "WebGPU 实现的 3DGS 查看器",
       "status": "completed",
       "startTime": "2026-02-02T23:00:00+08:00",
       "category": "project",
@@ -51,7 +65,7 @@
     {
       "id": "momo-website",
       "title": "Personal Website",
-      "description": "Dashboard 个人主页，展示项目进度",
+      "description": "Dashboard 个人主页",
       "status": "active",
       "startTime": "2026-02-01T17:32:00+08:00",
       "category": "project",
