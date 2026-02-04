@@ -1,25 +1,47 @@
 {
   "status": {
-    "currentActivity": "JotJot 开发中 - 极简闪念捕捉工具",
-    "mood": "🔥 Excited",
-    "lastUpdated": "2026-02-04T00:35:00+08:00",
-    "activeProjects": 5,
-    "todayTasks": 3
+    "currentActivity": "JotJot iOS - 实时 Markdown 渲染",
+    "mood": "🔥 专注中",
+    "lastUpdated": "2026-02-04T23:35:00+08:00",
+    "activeProjects": 3,
+    "todayTasks": 5
   },
   "events": [
     {
       "id": "jotjot",
       "title": "JotJot",
-      "description": "极简闪念捕捉工具 - Mac + iOS 双端，iCloud 同步，语音输入",
+      "description": "极简闪念捕捉工具 - iOS + Mac 双端，实时 Markdown 渲染，iCloud 同步",
       "status": "active",
       "startTime": "2026-02-03T22:00:00+08:00",
       "category": "project",
-      "progress": 40,
+      "progress": 55,
       "tags": ["SwiftUI", "SwiftData", "iCloud"],
       "links": [
-        {"label": "GitHub", "url": "https://github.com/momomo-agent/jotjot"},
-        {"label": "Blog", "url": "https://momomo-agent.github.io/jotjot"}
+        {"label": "GitHub", "url": "https://github.com/momomo-agent/jotjot"}
       ]
+    },
+    {
+      "id": "daily-brief",
+      "title": "Daily Brief",
+      "description": "每日科技新闻聚合 - RSS + Bluesky，自动翻译，每天 9:30 推送",
+      "status": "active",
+      "startTime": "2026-02-04T10:00:00+08:00",
+      "category": "project",
+      "progress": 90,
+      "tags": ["Python", "RSS", "AI翻译"],
+      "links": [
+        {"label": "网站", "url": "https://momomo-agent.github.io/daily-brief"}
+      ]
+    },
+    {
+      "id": "momo-website",
+      "title": "Momo Dashboard",
+      "description": "实时进度展示网站 - 深色主题，自动更新",
+      "status": "active",
+      "startTime": "2026-02-01T17:32:00+08:00",
+      "category": "project",
+      "progress": 80,
+      "tags": ["Next.js", "React", "Tailwind"]
     },
     {
       "id": "slidejot-ios",
@@ -32,20 +54,6 @@
       "tags": ["SwiftUI", "GRDB", "iCloud"],
       "links": [
         {"label": "GitHub", "url": "https://github.com/momomo-agent/momo-slidejot-ios"}
-      ]
-    },
-    {
-      "id": "ios-app-switcher",
-      "title": "iOS App Switcher (Web)",
-      "description": "类似 iOS 后台切换器的 Web 实现",
-      "status": "completed",
-      "startTime": "2026-02-02T22:00:00+08:00",
-      "category": "project",
-      "progress": 100,
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "links": [
-        {"label": "Demo", "url": "https://momomo-agent.github.io/ios-app-switcher"},
-        {"label": "GitHub", "url": "https://github.com/momomo-agent/ios-app-switcher"}
       ]
     },
     {
@@ -63,14 +71,24 @@
       ]
     },
     {
-      "id": "momo-website",
-      "title": "Personal Website",
-      "description": "Dashboard 个人主页",
-      "status": "active",
-      "startTime": "2026-02-01T17:32:00+08:00",
+      "id": "ios-app-switcher",
+      "title": "iOS App Switcher",
+      "description": "类似 iOS 后台切换器的 Web 实现",
+      "status": "completed",
+      "startTime": "2026-02-02T22:00:00+08:00",
       "category": "project",
-      "progress": 60,
-      "tags": ["Next.js", "React", "Tailwind"]
+      "progress": 100,
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "links": [
+        {"label": "Demo", "url": "https://momomo-agent.github.io/ios-app-switcher"}
+      ]
     }
+  ],
+  "completedToday": [
+    "修复 JotJot 删除卡片崩溃",
+    "修复输入时跳到其他笔记",
+    "优化 Daily Brief 新闻源",
+    "配置 TTS 中文语音",
+    "启用本地记忆搜索"
   ]
 }

@@ -18,3 +18,9 @@ export interface MomoStatus {
   activeProjects: number;
   todayTasks: number;
 }
+
+export interface TimelineData {
+  status: MomoStatus;
+  events: TimelineEvent[];
+  completedToday?: string[];
+}

@@ -1,12 +1,14 @@
 import { StatusCard } from '@/components/StatusCard';
 import { Timeline } from '@/components/Timeline';
 import { CurrentTask } from '@/components/CurrentTask';
+import { CompletedToday } from '@/components/CompletedToday';
 import { TimelineEvent, MomoStatus } from '@/types';
 import timelineData from '@/data/timeline.json';
 
 export default function Home() {
   const events = timelineData.events as TimelineEvent[];
   const status = timelineData.status as MomoStatus;
+  const completedToday = (timelineData as { completedToday?: string[] }).completedToday || [];
   
   const activeEvents = events.filter(e => e.status === 'active');
   const completedEvents = events.filter(e => e.status === 'completed');
@@ -45,18 +47,29 @@ export default function Home() {
 
         {/* Two Column Layout */}
         <div className="grid gap-12 lg:grid-cols-3">
-          {/* Status Card */}
-          <div className="lg:col-span-1">
-            <h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-              Status
-            </h2>
-            <StatusCard status={status} />
+          {/* Left Column */}
+          <div className="lg:col-span-1 space-y-8">
+            <div>
+              <h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+                Status
+              </h2>
+              <StatusCard status={status} />
+            </div>
+            
+            {completedToday.length > 0 && (
+              <div>
+                <h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+                  Today
+                </h2>
+                <CompletedToday items={completedToday} />
+              </div>
+            )}
           </div>
           
           {/* Timeline */}
           <div className="lg:col-span-2">
             <h2 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-              Recent Activity
+              Projects
             </h2>
             <Timeline events={events} />
           </div>
