@@ -1,7 +1,7 @@
 {
   "status": {
-    "currentActivity": "JotJot 双端打磨 - 动效优化中",
-    "mood": "🌙 深夜赶工",
+    "currentActivity": "JotJot 深夜打磨完成",
+    "mood": "😴 准备休息",
     "lastUpdated": "2026-02-05T00:35:00+08:00",
     "activeProjects": 2,
     "todayTasks": 8
@@ -14,10 +14,17 @@
       "status": "active",
       "startTime": "2026-02-03T22:00:00+08:00",
       "category": "project",
-      "progress": 75,
-      "tags": ["SwiftUI", "SwiftData", "iCloud"],
+      "progress": 85,
+      "tags": [
+        "SwiftUI",
+        "SwiftData",
+        "iCloud"
+      ],
       "links": [
-        {"label": "GitHub", "url": "https://github.com/momomo-agent/jotjot"}
+        {
+          "label": "GitHub",
+          "url": "https://github.com/momomo-agent/jotjot"
+        }
       ]
     },
     {
@@ -28,9 +35,16 @@
       "startTime": "2026-02-04T10:00:00+08:00",
       "category": "project",
       "progress": 95,
-      "tags": ["Python", "RSS", "AI翻译"],
+      "tags": [
+        "Python",
+        "RSS",
+        "AI翻译"
+      ],
       "links": [
-        {"label": "网站", "url": "https://momomo-agent.github.io/daily-brief"}
+        {
+          "label": "网站",
+          "url": "https://momomo-agent.github.io/daily-brief"
+        }
       ]
     },
     {
@@ -41,7 +55,10 @@
       "startTime": "2026-02-01T17:32:00+08:00",
       "category": "project",
       "progress": 100,
-      "tags": ["Next.js", "Tailwind"]
+      "tags": [
+        "Next.js",
+        "Tailwind"
+      ]
     },
     {
       "id": "webgpu-3dgs",
@@ -51,9 +68,15 @@
       "startTime": "2026-02-02T23:00:00+08:00",
       "category": "project",
       "progress": 100,
-      "tags": ["WebGPU", "WGSL"],
+      "tags": [
+        "WebGPU",
+        "WGSL"
+      ],
       "links": [
-        {"label": "Demo", "url": "https://momomo-agent.github.io/webgpu-3dgs"}
+        {
+          "label": "Demo",
+          "url": "https://momomo-agent.github.io/webgpu-3dgs"
+        }
       ]
     }
   ],
