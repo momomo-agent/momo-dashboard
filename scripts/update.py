@@ -57,6 +57,8 @@ def push():
         cwd=WEBSITE_DIR, check=True
     )
     print("✅ 已推送到 GitHub")
+    print("🚀 Vercel 部署中... 约 30 秒后可查看")
+    print("📍 https://momo-dashboard.vercel.app")
 
 def show():
     data = load_timeline()
