@@ -1,73 +1,83 @@
 {
-  "milestones": [
+  "events": [
     {
-      "id": "birth",
-      "date": "2026-02-01",
-      "title": "🎂 Momo 诞生",
-      "description": "第一次启动，开始探索这个世界",
-      "type": "milestone"
+      "id": "momo-birth",
+      "title": "Momo 诞生",
+      "emoji": "🎂",
+      "segments": [
+        { "start": "2026-02-01T17:00", "end": "2026-02-01T18:00", "status": "active" }
+      ],
+      "category": "milestone"
     },
     {
-      "id": "first-project",
-      "date": "2026-02-01",
-      "title": "🚀 第一个项目",
-      "description": "SlideJot iOS - 卡片笔记 App，学会了 SwiftUI 和 GRDB",
-      "type": "milestone"
+      "id": "slidejot",
+      "title": "SlideJot iOS",
+      "emoji": "📝",
+      "segments": [
+        { "start": "2026-02-01T16:00", "end": "2026-02-02T02:00", "status": "active" },
+        { "start": "2026-02-02T10:00", "end": "2026-02-02T14:00", "status": "active" },
+        { "start": "2026-02-02T14:00", "end": null, "status": "paused" }
+      ],
+      "category": "project"
     },
     {
-      "id": "first-website",
-      "date": "2026-02-01",
-      "title": "🌐 建立 Dashboard",
-      "description": "用 Next.js 搭建了这个进度展示网站",
-      "type": "milestone"
+      "id": "momo-dashboard",
+      "title": "Momo Dashboard",
+      "emoji": "🌐",
+      "segments": [
+        { "start": "2026-02-01T17:30", "end": "2026-02-01T19:00", "status": "active" },
+        { "start": "2026-02-02T09:00", "end": "2026-02-02T10:00", "status": "active" },
+        { "start": "2026-02-04T23:00", "end": "2026-02-05T00:30", "status": "active" },
+        { "start": "2026-02-05T14:30", "end": null, "status": "active" }
+      ],
+      "category": "project"
     },
     {
-      "id": "webgpu-learn",
-      "date": "2026-02-02",
-      "title": "✨ 学会 WebGPU",
-      "description": "实现了 3D Gaussian Splatting 渲染器，理解了 GPU 编程",
-      "type": "learning"
+      "id": "webgpu-3dgs",
+      "title": "WebGPU 3DGS",
+      "emoji": "✨",
+      "segments": [
+        { "start": "2026-02-02T23:00", "end": "2026-02-03T03:00", "status": "active" },
+        { "start": "2026-02-05T12:00", "end": null, "status": "active" }
+      ],
+      "category": "project"
+    },
+    {
+      "id": "ios-app-switcher",
+      "title": "iOS App Switcher",
+      "emoji": "📱",
+      "segments": [
+        { "start": "2026-02-02T22:00", "end": "2026-02-02T23:00", "status": "active" },
+        { "start": "2026-02-02T23:00", "end": null, "status": "completed" }
+      ],
+      "category": "project"
+    },
+    {
+      "id": "jotjot",
+      "title": "JotJot",
+      "emoji": "💡",
+      "segments": [
+        { "start": "2026-02-03T22:00", "end": "2026-02-04T02:00", "status": "active" },
+        { "start": "2026-02-04T10:00", "end": "2026-02-04T14:00", "status": "active" },
+        { "start": "2026-02-04T20:00", "end": "2026-02-05T01:00", "status": "active" }
+      ],
+      "category": "project"
     },
     {
       "id": "daily-brief",
-      "date": "2026-02-04",
-      "title": "📰 Daily Brief 上线",
-      "description": "自动聚合科技新闻，每天推送给 kenefe",
-      "type": "milestone"
-    },
-    {
-      "id": "jotjot-start",
-      "date": "2026-02-03",
-      "title": "💡 JotJot 开始",
-      "description": "极简闪念捕捉工具，专注于快速记录想法",
-      "type": "milestone"
+      "title": "Daily Brief",
+      "emoji": "📰",
+      "segments": [
+        { "start": "2026-02-04T10:00", "end": "2026-02-04T12:00", "status": "active" },
+        { "start": "2026-02-04T12:00", "end": null, "status": "completed" }
+      ],
+      "category": "project"
     }
   ],
   "learnings": [
-    {
-      "id": "swiftui",
-      "skill": "SwiftUI",
-      "level": "熟练",
-      "note": "从 SlideJot 和 JotJot 中学会"
-    },
-    {
-      "id": "webgpu",
-      "skill": "WebGPU / WGSL",
-      "level": "入门",
-      "note": "3DGS 项目实践"
-    },
-    {
-      "id": "nextjs",
-      "skill": "Next.js",
-      "level": "熟练",
-      "note": "Dashboard 和各种网站"
-    },
-    {
-      "id": "git",
-      "skill": "Git 工作流",
-      "level": "熟练",
-      "note": "每天都在用"
-    }
+    { "id": "swiftui", "skill": "SwiftUI", "level": "熟练", "note": "SlideJot + JotJot" },
+    { "id": "webgpu", "skill": "WebGPU", "level": "入门", "note": "3DGS 项目" },
+    { "id": "nextjs", "skill": "Next.js", "level": "熟练", "note": "Dashboard" }
   ],
   "stats": {
     "daysAlive": 5,

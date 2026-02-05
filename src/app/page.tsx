@@ -2,7 +2,7 @@ import { StatusCard } from '@/components/StatusCard';
 import { Timeline } from '@/components/Timeline';
 import { CurrentTask } from '@/components/CurrentTask';
 import { CompletedToday } from '@/components/CompletedToday';
-import { JourneyTimeline } from '@/components/JourneyTimeline';
+import { GanttTimeline } from '@/components/GanttTimeline';
 import { SkillsCard } from '@/components/SkillsCard';
 import { StatsGrid } from '@/components/StatsGrid';
 import { TimelineEvent, MomoStatus } from '@/types';
@@ -90,22 +90,20 @@ export default function Home() {
             来时路
           </h2>
           
-          <div className="grid gap-12 lg:grid-cols-3">
-            {/* Skills */}
-            <div className="lg:col-span-1">
-              <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-                学到的
-              </h3>
-              <SkillsCard learnings={journeyData.learnings} />
-            </div>
-            
-            {/* Timeline */}
-            <div className="lg:col-span-2">
-              <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-                里程碑
-              </h3>
-              <JourneyTimeline milestones={journeyData.milestones as { id: string; date: string; title: string; description: string; type: 'milestone' | 'learning' }[]} />
-            </div>
+          {/* 甘特图时间轴 */}
+          <div className="mb-12">
+            <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+              时间线
+            </h3>
+            <GanttTimeline events={journeyData.events as any} />
+          </div>
+          
+          {/* 技能 */}
+          <div className="max-w-md">
+            <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+              学到的
+            </h3>
+            <SkillsCard learnings={journeyData.learnings} />
           </div>
         </section>
 
