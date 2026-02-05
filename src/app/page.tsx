@@ -3,6 +3,7 @@ import { Timeline } from '@/components/Timeline';
 import { CurrentTask } from '@/components/CurrentTask';
 import { CompletedToday } from '@/components/CompletedToday';
 import { GameMapTimeline } from '@/components/GameMapTimeline';
+import { MultiTrackTimeline } from '@/components/MultiTrackTimeline';
 import { SkillsCard } from '@/components/SkillsCard';
 import { StatsGrid } from '@/components/StatsGrid';
 import { TimelineEvent, MomoStatus } from '@/types';
@@ -90,12 +91,20 @@ export default function Home() {
             来时路
           </h2>
           
-          {/* 甘特图时间轴 */}
+          {/* 游戏地图 - 整体视角 */}
           <div className="mb-12">
             <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
-              时间线
+              探索地图
             </h3>
             <GameMapTimeline events={journeyData.events as any} />
+          </div>
+          
+          {/* 多轨道时间线 - 详细时间段 */}
+          <div className="mb-12">
+            <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+              时间轨道
+            </h3>
+            <MultiTrackTimeline events={journeyData.events as any} />
           </div>
           
           {/* 技能 */}
