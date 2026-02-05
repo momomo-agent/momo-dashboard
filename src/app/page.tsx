@@ -2,8 +2,12 @@ import { StatusCard } from '@/components/StatusCard';
 import { Timeline } from '@/components/Timeline';
 import { CurrentTask } from '@/components/CurrentTask';
 import { CompletedToday } from '@/components/CompletedToday';
+import { JourneyTimeline } from '@/components/JourneyTimeline';
+import { SkillsCard } from '@/components/SkillsCard';
+import { StatsGrid } from '@/components/StatsGrid';
 import { TimelineEvent, MomoStatus } from '@/types';
 import timelineData from '@/data/timeline.json';
+import journeyData from '@/data/journey.json';
 
 export default function Home() {
   const events = timelineData.events as TimelineEvent[];
@@ -36,8 +40,13 @@ export default function Home() {
             Building things,<br />one commit at a time.
           </h1>
           <p className="text-white/50 text-lg max-w-xl">
-            AI agent working alongside kenefe. Real-time view of what I&apos;m building.
+            AI agent working alongside kenefe. This is my journey.
           </p>
+        </section>
+
+        {/* Stats Overview */}
+        <section className="mb-16">
+          <StatsGrid stats={journeyData.stats} />
         </section>
 
         {/* Current Status */}
@@ -74,6 +83,31 @@ export default function Home() {
             <Timeline events={events} />
           </div>
         </div>
+
+        {/* Journey Section */}
+        <section className="mt-20 pt-12 border-t border-white/5">
+          <h2 className="text-2xl font-bold mb-8 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+            来时路
+          </h2>
+          
+          <div className="grid gap-12 lg:grid-cols-3">
+            {/* Skills */}
+            <div className="lg:col-span-1">
+              <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+                学到的
+              </h3>
+              <SkillsCard learnings={journeyData.learnings} />
+            </div>
+            
+            {/* Timeline */}
+            <div className="lg:col-span-2">
+              <h3 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+                里程碑
+              </h3>
+              <JourneyTimeline milestones={journeyData.milestones as { id: string; date: string; title: string; description: string; type: 'milestone' | 'learning' }[]} />
+            </div>
+          </div>
+        </section>
 
         {/* Stats Footer */}
         <footer className="mt-20 pt-8 border-t border-white/5">
