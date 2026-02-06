@@ -1,17 +1,31 @@
 {
   "status": {
-    "currentActivity": "WebGPU 3DGS - 修复设备渲染差异",
-    "mood": "🔧 调试中",
-    "lastUpdated": "2026-02-05T14:35:00+08:00",
-    "activeProjects": 3,
-    "todayTasks": 5
+    "currentActivity": "Toumo - 交互动效设计工具开发",
+    "mood": "🚀 高速开发中",
+    "lastUpdated": "2026-02-06T11:05:00+08:00",
+    "activeProjects": 4,
+    "todayTasks": 3
   },
   "events": [
     {
+      "id": "toumo",
+      "title": "Toumo",
+      "description": "交互动效设计工具 - 314 commits，支持滤镜/渐变/图层/分组/对齐/Frame等",
+      "status": "active",
+      "startTime": "2026-02-05T00:00:00+08:00",
+      "category": "project",
+      "progress": 65,
+      "tags": ["React", "Canvas", "设计工具"],
+      "links": [
+        {"label": "Demo", "url": "https://momomo-agent.github.io/toumo"},
+        {"label": "GitHub", "url": "https://github.com/nicekate/toumo"}
+      ]
+    },
+    {
       "id": "webgpu-3dgs",
       "title": "WebGPU 3D Gaussian Splatting",
-      "description": "WebGPU 实现的 3DGS 查看器 - 修复不同设备渲染差异",
-      "status": "active",
+      "description": "WebGPU 实现的 3DGS 查看器",
+      "status": "paused",
       "startTime": "2026-02-02T23:00:00+08:00",
       "category": "project",
       "progress": 80,
@@ -24,8 +38,8 @@
     {
       "id": "jotjot",
       "title": "JotJot",
-      "description": "极简闪念捕捉工具 - iOS + Mac 双端，实时 Markdown 渲染，iCloud 同步",
-      "status": "active",
+      "description": "极简闪念捕捉工具 - iOS + Mac 双端",
+      "status": "paused",
       "startTime": "2026-02-03T22:00:00+08:00",
       "category": "project",
       "progress": 92,
@@ -37,7 +51,7 @@
     {
       "id": "daily-brief",
       "title": "Daily Brief",
-      "description": "每日科技新闻聚合 - RSS + Bluesky，自动翻译，每天 9:30 推送",
+      "description": "每日科技新闻聚合 - RSS + Bluesky",
       "status": "active",
       "startTime": "2026-02-04T10:00:00+08:00",
       "category": "project",
@@ -50,17 +64,17 @@
     {
       "id": "momo-website",
       "title": "Momo Dashboard",
-      "description": "实时进度展示网站 - 深色主题，自动更新",
+      "description": "实时进度展示网站",
       "status": "active",
       "startTime": "2026-02-01T17:32:00+08:00",
       "category": "project",
-      "progress": 80,
+      "progress": 85,
       "tags": ["Next.js", "React", "Tailwind"]
     },
     {
       "id": "slidejot-ios",
       "title": "SlideJot iOS",
-      "description": "卡片笔记 App - 左滑删除、双指缩放、下拉收起",
+      "description": "卡片笔记 App",
       "status": "paused",
       "startTime": "2026-02-01T16:00:00+08:00",
       "category": "project",
@@ -85,8 +99,8 @@
     }
   ],
   "completedToday": [
-    "WebGPU 3DGS 基础渲染完成",
-    "PLY 文件加载解析",
-    "相机交互控制"
+    "Toumo 314 commits 里程碑",
+    "滤镜系统完成",
+    "图层分组和对齐工具"
   ]
 }
